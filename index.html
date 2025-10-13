@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Bhandigare - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="scrpt.js"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="container mx-auto max-w-6xl p-4 lg:p-8">
+
+        <!-- Profile Card -->
+        <div class="profile-card shadow-md">
+            <!-- Banner Image -->
+            <div class="banner-image">
+                <img class="w-full h-48 object-cover" src="linkedin_banner-2.png" alt="Banner Image">
+            </div>
+
+            <div class="p-6 pb-4">
+                <!-- Profile Picture and Basic Info -->
+                <div class="flex flex-col md:flex-row">
+                    <div class="flex-shrink-0">
+                        <img class="profile-picture" src="1000034369.jpg" alt="Darshan Bhandigare">
+                    </div>
+                    <div class="md:ml-6 mt-4 md:mt-10 w-full">
+                        <h1 class="text-3xl font-bold text-gray-800">Darshan Bhandigare</h1>
+                        <p class="text-md text-gray-600 mt-1">Aspiring Software Developer</p>
+                        <p class="text-sm text-gray-500 mt-2">D.G. Ruparel College of Arts, Science and Commerce |
+                            Mumbai, Maharashtra, India</p>
+
+                        <!-- Contact & Connect Buttons -->
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <a href="#" id="contact-info-btn"
+                                class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 flex items-center gap-2">
+                                <i class="fas fa-envelope"></i> Contact Info
+                            </a>
+                            <a href="https://www.linkedin.com/in/darshan-bhandigare/" target="_blank"
+                                class="border border-blue-600 text-blue-600 font-semibold py-2 px-4 rounded-full hover:bg-blue-50 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+
+
+            <div class="lg:col-span-2 space-y-4">
+                <!-- Experience Section -->
+                <div class="content-card shadow-md">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Experience</h2>
+                    <div class="border-l-2 border-gray-200 pl-6">
+
+                        <div class="mb-4">
+                            <div class="flex items-center mb-1">
+
+                                <div class="bg-blue-600 rounded-full h-4 w-4 -ml-8 mr-4 border-2 border-white"></div>
+                                <h3 class="text-lg font-semibold text-gray-900">Foundational Development & Active
+                                    Learning</h3>
+                            </div>
+                            <p class="text-gray-600 font-medium">Aspiring Software Developer | First Year Student</p>
+                            <p class="text-sm text-gray-500">Present</p>
+                            <p class="mt-2 text-gray-700 leading-relaxed">
+                                My primary focus is on building core technical proficiencies, particularly through
+                                hands-on projects using <b>C/C++</b>, while mastering fundamental data structures and
+                                algorithms. At this stage of my journey, I am dedicated to collaborative learning and
+                                continuous skill development towards becoming a proficient software developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Section -->
+                <div class="content-card shadow-md">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Project 1 -->
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition duration-300">
+                            <h3 class="text-lg font-semibold text-gray-900">Portfolio Website</h3>
+                            <p class="text-sm text-gray-600 mt-1 mb-2">A personal portfolio website to showcase skills
+                                and projects, built with HTML and Tailwind CSS.</p>
+                            <a href="https://darshanbhandigare.github.io/"
+                                class="font-medium text-blue-600 hover:underline">View Project <i
+                                    class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lg:col-span-1 flex flex-col gap-4">
+                <!-- About Section (Sidebar) -->
+                <div class="content-card shadow-md">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">About</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        I am currently pursuing a Bachelor of Science in Information Technology at D.G. Ruparel College,
+                        where I’m developing a strong foundation in programming, software development, and
+                        problem-solving. With a passion for technology and continuous learning, I am confident in my
+                        journey to becoming a skilled software developer.
+                    </p>
+                </div>
+
+                <!-- Skills Section (Sidebar) -->
+                <div class="content-card shadow-md">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Skills</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">HTML &
+                            CSS</span>
+                        <span class="bg-red-100 text-red-800 text-sm font-medium px-4 py-2 rounded-full">C++</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full">C</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-4 py-2 rounded-full">Team
+                            leadership</span>
+                    </div>
+                </div>
+
+
+                <div class="content-card shadow-md flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Education</h2>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">D.G. Ruparel College of Arts, Science and
+                            Commerce</h3>
+                        <p class="text-gray-600">Bachelor of Science - BS, Information Technology</p>
+                        <p class="text-sm text-gray-500">2025 - 2028 (expected)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-8 pb-4">
+            <div class="flex justify-center space-x-6 mb-2">
+                <a href="https://instagram.com/amazedarshan" target="_blank"
+                    class="text-gray-600 hover:text-pink-600 transition duration-300">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://youtube.com/@amazedarshan" target="_blank"
+                    class="text-gray-600 hover:text-red-600 transition duration-300">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Darshan Bhandigare. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Contact Modal Structure -->
+    <div id="contact-modal"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center transition-opacity duration-300">
+        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full relative transform transition-transform duration-300 scale-95 opacity-0"
+            id="modal-content">
+            <button id="close-modal-btn" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 transition">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-envelope text-blue-600 mr-2"></i> Get In Touch
+            </h3>
+            <p class="text-gray-700 mb-4">You can reach me directly at:</p>
+            <div class="bg-gray-100 p-3 rounded-lg flex items-center justify-between">
+                <span id="contact-email-display"
+                    class="font-mono text-sm sm:text-base text-gray-900">bhandigaredarshan@gmail.com</span>
+                <button id="copy-email-btn" class="ml-3 text-blue-600 hover:text-blue-800 transition duration-300"
+                    title="Copy to clipboard">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+            <p id="copy-message" class="text-xs text-green-600 mt-2 hidden">Copied to clipboard!</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
