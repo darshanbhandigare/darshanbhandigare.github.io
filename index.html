@@ -5,44 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darshan Bhandigare - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="scrpt.js"></script>
+    <script src="script.js"></script>
 </head>
 
-<body class="bg-gray-100">
+<body>
 
-    <div class="container mx-auto max-w-6xl p-4 lg:p-8">
+   <div class="container">
 
         <!-- Profile Card -->
-        <div class="profile-card shadow-md">
+        <div class="profile-card">
             <!-- Banner Image -->
             <div class="banner-image">
-                <img class="w-full h-48 object-cover" src="https://i.ibb.co/60DL9tf1/linkedin-banner-2.png" alt="Banner">
+                <img src="https://i.ibb.co/60DL9tf1/linkedin-banner-2.png" alt="Banner">
             </div>
 
-            <div class="p-6 pb-4">
+            <div class="profile-content">
                 <!-- Profile Picture and Basic Info -->
-                <div class="flex flex-col md:flex-row">
-                    <div class="flex-shrink-0">
+                <div class="profile-header">
+                    <div style="flex-shrink: 0;">
                         <img class="profile-picture" src="https://i.ibb.co/dwzsYFmd/1000034369.jpg" alt="Profile Picture">
                     </div>
-                    <div class="md:ml-6 mt-4 md:mt-10 w-full">
-                        <h1 class="text-3xl font-bold text-gray-800">Darshan Bhandigare</h1>
-                        <p class="text-md text-gray-600 mt-1">Aspiring Software Developer</p>
-                        <p class="text-sm text-gray-500 mt-2">D.G. Ruparel College of Arts, Science and Commerce |
-                            Mumbai, Maharashtra, India</p>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Darshan Bhandigare</h1>
+                        <p class="profile-headline">Aspiring Software Developer</p>
+                        <p class="profile-location">D.G. Ruparel College of Arts, Science and Commerce | Mumbai, Maharashtra, India</p>
 
                         <!-- Contact & Connect Buttons -->
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <a href="#" id="contact-info-btn"
-                                class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 flex items-center gap-2">
+                        <div class="btn-group">
+                            <a href="#" id="contact-info-btn" class="btn btn-primary">
                                 <i class="fas fa-envelope"></i> Contact Info
                             </a>
-                            <a href="https://www.linkedin.com/in/darshan-bhandigare/" target="_blank"
-                                class="border border-blue-600 text-blue-600 font-semibold py-2 px-4 rounded-full hover:bg-blue-50 transition duration-300 flex items-center gap-2">
+                            <a href="https://www.linkedin.com/in/darshan-bhandigare/" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-linkedin"></i> Connect on LinkedIn
                             </a>
                         </div>
@@ -52,25 +48,21 @@
         </div>
 
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+        <div class="grid-layout">
 
-
-            <div class="lg:col-span-2 space-y-4">
+            <div class="space-y-4">
                 <!-- Experience Section -->
-                <div class="content-card shadow-md">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Experience</h2>
-                    <div class="border-l-2 border-gray-200 pl-6">
-
-                        <div class="mb-4">
-                            <div class="flex items-center mb-1">
-
-                                <div class="bg-blue-600 rounded-full h-4 w-4 -ml-8 mr-4 border-2 border-white"></div>
-                                <h3 class="text-lg font-semibold text-gray-900">Foundational Development & Active
-                                    Learning</h3>
+                <div class="content-card">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="flex items-center mb-1" style="display: flex; align-items: center; margin-bottom: 0.25rem;">
+                                <div class="timeline-dot"></div>
+                                <h3 class="timeline-title">Foundational Development & Active Learning</h3>
                             </div>
-                            <p class="text-gray-600 font-medium">Aspiring Software Developer | First Year Student</p>
-                            <p class="text-sm text-gray-500">Present</p>
-                            <p class="mt-2 text-gray-700 leading-relaxed">
+                            <p class="timeline-subtitle">Aspiring Software Developer | First Year Student</p>
+                            <p class="timeline-date">Present</p>
+                            <p class="text-body" style="margin-top: 0.5rem;">
                                 My primary focus is on building core technical proficiencies, particularly through
                                 hands-on projects using <b>C/C++</b>, while mastering fundamental data structures and
                                 algorithms. At this stage of my journey, I am dedicated to collaborative learning and
@@ -81,29 +73,118 @@
                 </div>
 
                 <!-- Projects Section -->
-                <div class="content-card shadow-md">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Projects</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="content-card">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="projects-grid">
                         <!-- Project 1 -->
-                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition duration-300">
-                            <h3 class="text-lg font-semibold text-gray-900">Portfolio Website</h3>
-                            <p class="text-sm text-gray-600 mt-1 mb-2">A personal portfolio website to showcase skills
-                                and projects, built with HTML and Tailwind CSS.</p>
-                            <a href="https://darshanbhandigare.github.io/"
-                                class="font-medium text-blue-600 hover:underline">View Project <i
-                                    class="fas fa-arrow-right ml-1"></i></a>
+                        <div class="project-card">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-desc">A personal portfolio website to showcase skills
+                                and projects, built with HTML and CSS.</p>
+                            <a href="https://darshanbhandigare.github.io/" class="project-link">
+                                View Project <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
+                            </a>
+                        </div>
+                        <!-- Add more projects here following the same structure -->
+                    </div>
+                </div>
+
+                <!-- Certifications Section -->
+                <div class="content-card">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="cert-list">
+                        
+                        <!-- Certification Item 1: Deloitte Job Simulation (Virtual Internship) -->
+                        <div class="cert-item">
+                            <div class="cert-icon" style="background-color: #f0fdf4; color: #16a34a;">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h3 class="cert-title">Deloitte Job Simulation (Virtual Internship)</h3>
+                                <p class="cert-issuer">Deloitte / The Forage</p>
+                                <p class="cert-date">Issued: 2025</p>
+                                <div class="cert-links">
+                                    <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_68f110ef8e645218889eb542_1760631026251_completion_certificate.pdf" target="_blank" class="cert-btn" title="View Certificate PDF">
+                                        <i class="fas fa-file-pdf"></i> Show Certificate
+                                    </a>
+                                    <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_68f110ef8e645218889eb542_1760631026251_completion_certificate.pdf" target="_blank" class="cert-btn" title="View Credential">
+                                        <i class="fas fa-link"></i> Show Credential
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certification Item 2: Oracle Cloud Infrastructure 2025 Certified Generative AI Professional -->
+                        <div class="cert-item">
+                            <div class="cert-icon" style="background-color: #fefce8; color: #ca8a04;">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h3 class="cert-title">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h3>
+                                <p class="cert-issuer">Oracle</p>
+                                <p class="cert-date">Issued: 2025</p>
+                                <div class="cert-links">
+                                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E271C625D729BC583FD445257FB25C0DD47CED1CDB3B73675C885EDD4680DE49" target="_blank" class="cert-btn" title="View Credential Badge">
+                                        <i class="fas fa-link"></i> Show Credential
+                                    </a>
+                                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E271C625D729BC583FD445257FB25C0DD47CED1CDB3B73675C885EDD4680DE49" target="_blank" class="cert-btn" title="View Certificate">
+                                        <i class="fas fa-award"></i> Show Certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certification Item 3: Artificial Intelligence Fundamentals -->
+                        <div class="cert-item">
+                            <div class="cert-icon" style="background-color: #eef2ff; color: #4f46e5;">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h3 class="cert-title">Artificial Intelligence Fundamentals</h3>
+                                <p class="cert-issuer">Credly</p>
+                                <p class="cert-date">Issued: 2025</p>
+                                <div class="cert-links">
+                                    <a href="https://www.credly.com/badges/e5dfd0f6-cb8b-4b20-8dab-dc0ea95a2f70/linked_in_profile" target="_blank" class="cert-btn" title="View Credential Badge">
+                                        <i class="fas fa-link"></i> Show Credential
+                                    </a>
+                                    <a href="https://www.credly.com/badges/e5dfd0f6-cb8b-4b20-8dab-dc0ea95a2f70/linked_in_profile" target="_blank" class="cert-btn" title="View Certificate">
+                                        <i class="fas fa-award"></i> Show Certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certification Item 4: Web Development Fundamentals -->
+                        <div class="cert-item">
+                            <div class="cert-icon" style="background-color: #fef2f2; color: #b91c1c;">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h3 class="cert-title">Web Development Fundamentals</h3>
+                                <p class="cert-issuer">Credly</p>
+                                <p class="cert-date">Issued: 2025</p>
+                                <div class="cert-links">
+                                    <a href="https://www.credly.com/badges/7d8f1ef0-1ac2-401e-83af-e566c59e7a8b" target="_blank" class="cert-btn" title="View Credential Badge">
+                                        <i class="fas fa-link"></i> Show Credential
+                                    </a>
+                                    <a href="https://www.credly.com/badges/7d8f1ef0-1ac2-401e-83af-e566c59e7a8b" target="_blank" class="cert-btn" title="View Certificate">
+                                        <i class="fas fa-award"></i> Show Certificate
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
+
             </div>
 
 
-            <div class="lg:col-span-1 flex flex-col gap-4">
+            <div class="sidebar">
                 <!-- About Section (Sidebar) -->
-                <div class="content-card shadow-md">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">About</h2>
-                    <p class="text-gray-700 leading-relaxed">
+                <div class="content-card">
+                    <h2 class="section-title">About</h2>
+                    <p class="text-body">
                         I am currently pursuing a Bachelor of Science in Information Technology at D.G. Ruparel College,
                         where I’m developing a strong foundation in programming, software development, and
                         problem-solving. With a passion for technology and continuous learning, I am confident in my
@@ -112,74 +193,65 @@
                 </div>
 
                 <!-- Skills Section (Sidebar) -->
-                <div class="content-card shadow-md">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Skills</h2>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="bg-red-100 text-red-800 text-sm font-medium px-4 py-2 rounded-full">C++</span>
-                        <span class="bg-amber-100 text-amber-800 text-sm font-medium px-4 py-2 rounded-full">Python</span>
-                        <span class="bg-orange-100 text-orange-800 text-sm font-medium px-4 py-2 rounded-full">Data Structures</span>
-                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-4 py-2 rounded-full">Generative AI</span>
-                        <span class="bg-cyan-100 text-cyan-800 text-sm font-medium px-4 py-2 rounded-full">Gen AI for Software Dev</span>
-                        <!-- Planning color swapped to purple -->
-                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-4 py-2 rounded-full">Planning</span>
-                        <span class="bg-pink-100 text-pink-800 text-sm font-medium px-4 py-2 rounded-full">Formal Communication</span>
-                        <!-- Git & GitHub color changed to dark gray/black -->
-                        <span class="bg-gray-800 text-white text-sm font-medium px-4 py-2 rounded-full flex items-center gap-1">
+                <div class="content-card">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-container">
+                        <span class="skill-tag tag-red">C++</span>
+                        <span class="skill-tag tag-amber">Python</span>
+                        <span class="skill-tag tag-orange">Data Structures</span>
+                        <span class="skill-tag tag-teal">Generative AI</span>
+                        <span class="skill-tag tag-cyan">Gen AI for Software Dev</span>
+                        <span class="skill-tag tag-purple">Planning</span>
+                        <span class="skill-tag tag-pink">Formal Communication</span>
+                        <span class="skill-tag tag-dark">
                             <i class="fab fa-github"></i> Git & GitHub
                         </span>
                     </div>
                 </div>
 
 
-                <div class="content-card shadow-md flex-grow">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Education</h2>
+                <div class="content-card">
+                    <h2 class="section-title">Education</h2>
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-900">D.G. Ruparel College of Arts, Science and
-                            Commerce</h3>
-                        <p class="text-gray-600">Bachelor of Science - BS, Information Technology</p>
-                        <p class="text-sm text-gray-500">2025 - 2028 (expected)</p>
+                        <h3 class="project-title">D.G. Ruparel College of Arts, Science and Commerce</h3>
+                        <p style="color: var(--gray-600);">Bachelor of Science - BS, Information Technology</p>
+                        <p style="color: var(--gray-500); font-size: 0.875rem;">2025 - 2028 (expected)</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
-        <footer class="text-center mt-8 pb-4">
-            <div class="flex justify-center space-x-6 mb-2">
-                <a href="https://instagram.com/amazedarshan" target="_blank"
-                    class="text-gray-600 hover:text-pink-600 transition duration-300">
-                    <i class="fab fa-instagram text-2xl"></i>
+        <footer class="main-footer">
+            <div class="footer-links">
+                <a href="https://instagram.com/amazedarshan" target="_blank" class="footer-icon">
+                    <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://youtube.com/@amazedarshan" target="_blank"
-                    class="text-gray-600 hover:text-red-600 transition duration-300">
-                    <i class="fab fa-youtube text-2xl"></i>
+                <a href="https://youtube.com/@amazedarshan" target="_blank" class="footer-icon youtube">
+                    <i class="fab fa-youtube"></i>
                 </a>
             </div>
-            <p class="text-gray-500 text-sm">&copy; 2025 Darshan Bhandigare. All Rights Reserved.</p>
+            <p class="copyright">&copy; 2025 Darshan Bhandigare. All Rights Reserved.</p>
         </footer>
     </div>
 
     <!-- Contact Modal Structure -->
-    <div id="contact-modal"
-        class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center transition-opacity duration-300">
-        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full relative transform transition-transform duration-300 scale-95 opacity-0"
-            id="modal-content">
-            <button id="close-modal-btn" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 transition">
-                <i class="fas fa-times text-xl"></i>
+    <div id="contact-modal" class="modal-overlay hidden">
+        <div id="modal-content" class="modal-box">
+            <button id="close-modal-btn" class="close-btn">
+                <i class="fas fa-times"></i>
             </button>
-            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                <i class="fas fa-envelope text-blue-600 mr-2"></i> Get In Touch
+            <h3 class="modal-title">
+                <i class="fas fa-envelope" style="color: var(--primary-blue);"></i> Get In Touch
             </h3>
-            <p class="text-gray-700 mb-4">You can reach me directly at:</p>
-            <div class="bg-gray-100 p-3 rounded-lg flex items-center justify-between">
-                <span id="contact-email-display"
-                    class="font-mono text-sm sm:text-base text-gray-900">bhandigaredarshan@gmail.com</span>
-                <button id="copy-email-btn" class="ml-3 text-blue-600 hover:text-blue-800 transition duration-300"
-                    title="Copy to clipboard">
+            <p style="color: var(--gray-700); margin-bottom: 1rem;">You can reach me directly at:</p>
+            <div class="email-container">
+                <span id="contact-email-display" class="email-text">darshanbhandigare9@gmail.com</span>
+                <button id="copy-email-btn" class="copy-btn" title="Copy to clipboard">
                     <i class="fas fa-copy"></i>
                 </button>
             </div>
-            <p id="copy-message" class="text-xs text-green-600 mt-2 hidden">Copied to clipboard!</p>
+            <p id="copy-message" class="copy-success-msg hidden">Copied to clipboard!</p>
         </div>
     </div>
 
@@ -188,6 +260,3 @@
 
 
 </html>
-
-
-
