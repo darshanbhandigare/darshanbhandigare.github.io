@@ -19,6 +19,15 @@ export const skills = [
 
 export const projects = [
   {
+    type: "SaaS Product",
+    title: "Status-200",
+    description:
+      "A portfolio builder for students and freelancers with templates, public links, resume parsing, and a Pro upgrade.",
+    tags: ["React", "TypeScript", "Supabase", "Vercel"],
+    live: "https://status-200.vercel.app/dashboard",
+    github: "https://github.com/DarshanBhandigare/STATUS200",
+  },
+  {
     type: "Fix My Itch by Razorpay",
     title: "InvoVault",
     description:
@@ -54,15 +63,6 @@ export const projects = [
     tags: ["React JS", "CSS", "JavaScript", "GitHub Pages"],
     live: "https://darshanbhandigare.github.io/",
     github: "https://github.com/DarshanBhandigare/darshanbhandigare.github.io",
-  },
-  {
-    type: "SaaS Product",
-    title: "Status-200",
-    description:
-      "A portfolio builder for students and freelancers with templates, public links, resume parsing, and a Pro upgrade.",
-    tags: ["React", "TypeScript", "Supabase", "Vercel"],
-    live: "https://status-200.vercel.app/dashboard",
-    github: "https://github.com/DarshanBhandigare/STATUS200",
   },
 ];
 
