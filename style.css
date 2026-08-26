@@ -231,13 +231,24 @@ section {
   max-width: 42rem;
 }
 
+.hero-header-group {
+  display: contents;
+}
+
+.hero-photo-mobile {
+  display: none;
+}
+
+.hero-photo-desktop {
+  display: flex;
+}
+
 .hero-photo {
   flex-shrink: 0;
   position: relative;
   top: -7rem;
   width: min(100%, 360px);
   aspect-ratio: 1;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -1219,14 +1230,32 @@ footer {
     padding: 7rem 1.25rem 3rem;
   }
 
-  .hero-photo {
-    position: absolute;
-    top: clamp(15rem, 64vw, 18rem);
-    right: 1.25rem;
-    margin-top: 0;
-    width: 8rem;
-    height: 8rem;
-    z-index: 2;
+  .hero-photo-desktop {
+    display: none !important;
+  }
+
+  .hero-header-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-photo-mobile {
+    display: flex !important;
+    position: relative !important;
+    top: 0 !important;
+    right: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    width: 7.2rem;
+    height: 7.2rem;
+    min-width: 7.2rem;
+    min-height: 7.2rem;
+    flex-shrink: 0;
   }
 
   .hero-left {
@@ -1244,34 +1273,36 @@ footer {
     white-space: normal;
   }
 
-  .hero-photo {
-    width: 8rem;
-    height: 8rem;
-    justify-self: auto;
-  }
-
   .hero-name {
-    max-width: calc(100% - 9rem);
-    font-size: clamp(2.15rem, 11vw, 3rem);
+    margin-bottom: 0 !important;
+    max-width: none !important;
+    font-size: clamp(2rem, 9.5vw, 2.75rem);
+    line-height: 0.95;
+    flex: 1;
+    word-break: break-word;
   }
 
-  @media (max-width: 360px) {
-    .hero-photo {
-      right: 0.75rem;
-      width: 7rem;
-      height: 7rem;
+  @media (max-width: 380px) {
+    .hero-header-group {
+      gap: 0.6rem;
+    }
+
+    .hero-photo-mobile {
+      width: 6.2rem;
+      height: 6.2rem;
+      min-width: 6.2rem;
+      min-height: 6.2rem;
     }
 
     .hero-name {
-      max-width: calc(100% - 8rem);
-      font-size: clamp(2rem, 11vw, 2.6rem);
+      font-size: clamp(1.75rem, 8.5vw, 2.2rem);
     }
   }
 
   .hero-photo-tag {
-    bottom: -1.25rem;
-    font-size: 0.5rem;
-    padding: 0.3rem 0.5rem;
+    bottom: -1rem;
+    font-size: 0.52rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .projects-layout {

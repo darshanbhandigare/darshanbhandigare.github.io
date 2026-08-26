@@ -10,11 +10,18 @@ export default function HeroSection() {
           <span className="prompt">~/darshan</span> <span className="cmd">$ </span>
           <span className="typewriter">cout&lt;&lt;"Hello! My name is Darshan Bhandigare"&lt;&lt;endl;</span>
         </div>
-        <h1 className="hero-name">
-          Darshan
-          <br />
-          <span>Bhandigare</span>
-        </h1>
+        <div className="hero-header-group">
+          <h1 className="hero-name">
+            Darshan
+            <br />
+            <span>Bhandigare</span>
+          </h1>
+          <div className="hero-photo hero-photo-mobile">
+            <div className="hero-photo-ring"></div>
+            <img src="https://i.ibb.co/JFKF11zd/1000034369.jpg" alt="Darshan Bhandigare" />
+            <div className="hero-photo-tag">Darshan.jpg</div>
+          </div>
+        </div>
         <p className="hero-sub">
           // Software Developer
           <br />
@@ -60,7 +67,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="hero-photo">
+      <div className="hero-photo hero-photo-desktop">
         <div className="hero-photo-ring"></div>
         <img src="https://i.ibb.co/JFKF11zd/1000034369.jpg" alt="Darshan Bhandigare" />
         <div className="hero-photo-tag">Darshan.jpg</div>
