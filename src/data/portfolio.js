@@ -26,6 +26,8 @@ export const projects = [
     tags: ["React", "TypeScript", "Supabase", "Vercel"],
     live: "https://status-200.vercel.app/dashboard",
     github: "https://github.com/DarshanBhandigare/STATUS200",
+    thumbnail:
+      "https://plain-apac-prod-public.komododecks.com/202608/22/A97g1cCkbSmVBnyDdIYn/image.jpg",
   },
   {
     type: "Fix My Itch by Razorpay",
@@ -35,6 +37,8 @@ export const projects = [
     tags: ["Next.js 15", "Supabase", "Tailwind v4", "TypeScript"],
     live: "https://invovault.vercel.app/",
     github: "https://github.com/DarshanBhandigare/InvoVault",
+    thumbnail:
+      "https://camo.githubusercontent.com/f7fd93fc722a9d88d273e910df66872184a52e0e0ac09e57dde17f658d2e1b36/68747470733a2f2f692e6962622e636f2f433331484d624d712f436170747572652e6a7067",
   },
   {
     type: "HackX 2.0(FrontEnd Developer)",
@@ -44,6 +48,7 @@ export const projects = [
     tags: ["React.js", "JavaScript", "HTML/CSS", "Firebase"],
     live: "https://inframind-ai.vercel.app/",
     github: "https://github.com/DarshanBhandigare/InfraMind-AI",
+    thumbnail: "https://i.ibb.co/cctXHjz8/Screenshot-22.png",
   },
   {
     type: "Web App",
@@ -53,6 +58,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Vercel"],
     live: "https://paletto-color-generator.vercel.app/",
     github: "https://github.com/darshanbhandigare/paletto-color-generator",
+    thumbnail: "https://i.ibb.co/DDKVcWWP/Screenshot-23.png",
   },
   {
     type: "Portfolio",
@@ -62,6 +68,7 @@ export const projects = [
     tags: ["React JS", "CSS", "JavaScript", "GitHub Pages"],
     live: "https://darshanbhandigare.github.io/",
     github: "https://github.com/DarshanBhandigare/darshanbhandigare.github.io",
+    thumbnail: "https://i.ibb.co/DfVhMbzk/portfolio.png",
   },
 ];
 

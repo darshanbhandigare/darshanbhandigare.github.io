@@ -1,6 +1,9 @@
-export default function ProjectCard({ type, title, description, tags, live, github }) {
+export default function ProjectCard({ type, title, description, tags, live, github, thumbnail }) {
   return (
     <div className="project-card reveal">
+      {thumbnail ? (
+        <img className="project-thumbnail" src={thumbnail} alt={`${title} preview`} />
+      ) : null}
       <div className="project-card-top">
         <span className="project-type">{type}</span>
         <div className="project-links">

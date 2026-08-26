@@ -1,3 +1,6 @@
+import { Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 export default function HeroSection() {
   return (
     <section id="hero">
@@ -24,15 +27,35 @@ export default function HeroSection() {
             View Projects {"->"}
           </a>
           <a
+            href="/DARSHAN_BHANDIGARE.pdf"
+            download="DARSHAN_BHANDIGARE.pdf"
+            className="btn btn-outline"
+          >
+            <Download size={16} aria-hidden="true" />
+            Download Resume
+          </a>
+          <a href="#contact" className="btn btn-outline">
+            Get In Touch
+          </a>
+          <a
+            href="https://github.com/DarshanBhandigare"
+            target="_blank"
+            rel="noreferrer"
+            className="social-icon"
+            aria-label="Visit Darshan's GitHub profile"
+            title="GitHub"
+          >
+            <FaGithub size={19} aria-hidden="true" />
+          </a>
+          <a
             href="https://www.linkedin.com/in/darshan-bhandigare/"
             target="_blank"
             rel="noreferrer"
-            className="btn btn-outline"
+            className="social-icon"
+            aria-label="Visit Darshan's LinkedIn profile"
+            title="LinkedIn"
           >
-            Connect on LinkedIn
-          </a>
-          <a href="mailto:darshanbhandigare9@gmail.com" className="btn btn-outline">
-            Get In Touch
+            <FaLinkedin size={19} aria-hidden="true" />
           </a>
         </div>
       </div>

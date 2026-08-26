@@ -1,4 +1,6 @@
 import SectionHeader from "../components/SectionHeader";
+import { Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
@@ -23,10 +25,20 @@ export default function ContactSection() {
             rel="noreferrer"
             className="btn btn-primary"
           >
+            <FaLinkedin size={16} aria-hidden="true" />
             LinkedIn {"->"}
           </a>
           <a href="https://github.com/DarshanBhandigare" target="_blank" rel="noreferrer" className="btn btn-outline">
+            <FaGithub size={16} aria-hidden="true" />
             GitHub {"->"}
+          </a>
+          <a
+            href="/DARSHAN_BHANDIGARE.pdf"
+            download="DARSHAN_BHANDIGARE.pdf"
+            className="btn btn-outline"
+          >
+            <Download size={16} aria-hidden="true" />
+            Download Resume
           </a>
         </div>
       </div>
