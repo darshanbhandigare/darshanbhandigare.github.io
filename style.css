@@ -1221,7 +1221,7 @@ footer {
 
   .hero-photo {
     position: absolute;
-    top: 15.75rem;
+    top: clamp(15rem, 64vw, 18rem);
     right: 1.25rem;
     margin-top: 0;
     width: 8rem;
@@ -1253,6 +1253,19 @@ footer {
   .hero-name {
     max-width: calc(100% - 9rem);
     font-size: clamp(2.15rem, 11vw, 3rem);
+  }
+
+  @media (max-width: 360px) {
+    .hero-photo {
+      right: 0.75rem;
+      width: 7rem;
+      height: 7rem;
+    }
+
+    .hero-name {
+      max-width: calc(100% - 8rem);
+      font-size: clamp(2rem, 11vw, 2.6rem);
+    }
   }
 
   .hero-photo-tag {
