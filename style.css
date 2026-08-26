@@ -1262,9 +1262,16 @@ footer {
   }
 
   .projects-layout {
-    grid-template-columns: 1fr;
     display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-auto-columns: minmax(17rem, 78vw);
     gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0.1rem 0.75rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
   }
 
   .skills-grid {
@@ -1287,13 +1294,17 @@ footer {
   }
 
   .projects-layout {
-    overflow: visible;
-    padding: 0;
+    overflow-x: auto;
   }
 
-  .project-card,
+  .project-card {
+    width: auto;
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+
   .skill-card {
-    width: 100%;
+    width: auto;
   }
 
   .project-card-top,
