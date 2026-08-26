@@ -7,10 +7,10 @@ export default function AboutSection() {
         <SectionHeader number="01" title="About" />
         <div className="about-text">
           <p>
-            I&apos;m a <strong>BSc IT student at</strong> D.G. Ruparel College with hands-on experience building and deploying full-stack web applications using <b>React.js, HTML, CSS, JavaScript, and SQL.</b>
+            I&apos;m a <strong>BSc IT student at</strong> D.G. Ruparel College with hands-on experience building and deploying full-stack web applications using <strong>React.js, HTML, CSS, JavaScript, and SQL.</strong>
           </p>
           <p>
-            My focus is on <strong>full-stack developmet and DSA in C++</strong>: hands-on projects in
+            My focus is on <strong>full-stack development and DSA in C++</strong>: hands-on projects in
             web development. I believe in learning by building - every project is a
             step forward.
           </p>
@@ -33,7 +33,7 @@ export default function AboutSection() {
         </div>
         <div className="stat-box">
           <div className="stat-num" style={{ color: "var(--accent2)" }}>
-            4
+            5
           </div>
           <div className="stat-label">Live Projects</div>
         </div>

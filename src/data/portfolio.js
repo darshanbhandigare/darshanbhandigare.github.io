@@ -36,16 +36,15 @@ export const projects = [
     live: "https://invovault.vercel.app/",
     github: "https://github.com/DarshanBhandigare/InvoVault",
   },
-
   {
     type: "HackX 2.0(FrontEnd Developer)",
     title: "InfraMind AI",
-    description: "Built a predictive infrastructure management platform using AI-driven risk scoring to detect and flag potential infrastructure failures before they occur.",
+    description:
+      "Built a predictive infrastructure management platform using AI-driven risk scoring to detect and flag potential infrastructure failures before they occur.",
     tags: ["React.js", "JavaScript", "HTML/CSS", "Firebase"],
     live: "https://inframind-ai.vercel.app/",
     github: "https://github.com/DarshanBhandigare/InfraMind-AI",
   },
-
   {
     type: "Web App",
     title: "Paletto",

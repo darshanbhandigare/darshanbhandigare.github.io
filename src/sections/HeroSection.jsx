@@ -47,7 +47,7 @@ export default function HeroSection() {
       <div className="hero-counter">
         <strong>4</strong>
         <span>Certifications</span>
-        <strong style={{ marginTop: "1rem" }}>4</strong>
+        <strong style={{ marginTop: "1rem" }}>5</strong>
         <span>Live Projects</span>
       </div>
     </section>

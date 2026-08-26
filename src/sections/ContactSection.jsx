@@ -11,8 +11,7 @@ export default function ContactSection() {
           something.
         </h3>
         <p className="contact-sub">
-          I&apos;m always open to new opportunities, collaborations, and conversations. Feel free to reach out - I&apos;ll
-          reply as soon as I can.
+          I&apos;m always open to new opportunities, collaborations, and conversations. If you&apos;re building something interesting, let&apos;s talk.
         </p>
         <a href="mailto:bhandigaredarshan@gmail.com" className="contact-email">
           bhandigaredarshan@gmail.com
@@ -63,11 +62,11 @@ export default function ContactSection() {
             </div>
             <div>
               <span className="t-purple"> C/C++</span> .
-              <span className="t-purple"> Python</span> 
+              <span className="t-purple"> Python</span>
             </div>
             <div>
-              <span className="t-purple"> HTML/CSS/JS</span> . 
-              <span className="t-purple"> React JS</span> . 
+              <span className="t-purple"> HTML/CSS/JS</span> .
+              <span className="t-purple"> React JS</span> .
               <span className="t-purple"> DSA</span> .
               <span className="t-purple"> Gen AI</span> .
               <span className="t-purple"> Git</span>
