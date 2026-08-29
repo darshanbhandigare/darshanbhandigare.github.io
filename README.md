@@ -9,7 +9,7 @@ This is a personal portfolio website built to showcase my skills, projects, cert
 
 ## 📸 Preview
 
-![Portfolio Preview](https://i.ibb.co/Mkq5M8nv/Capture.jpg)
+![Portfolio Preview](https://i.ibb.co/DfVhMbzk/portfolio.png)
 
 ---
 
